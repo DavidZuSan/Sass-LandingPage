@@ -11549,6 +11549,14 @@ textarea.form-control-lg {
   border-color: #f8f9fa;
 }
 
+.text-black {
+  color: black;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
 header {
   background-image: url("../img/header.jpg");
   height: 200px;
