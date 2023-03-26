@@ -42,26 +42,79 @@
       <h1 class="text-center fw-lighter py-5">Contacto</h1>
       <p class="text-center lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, voluptas veniam numquam dolor perferendis ipsam dolore sunt sit praesentium esse.</p>
       
-        <div class="row">
-          <div class="col-12 col-md-4 text-center text-md-start">
-            <h2>5.000</h2>
-            <p class="text-muted text-small">Lorem ipsum dolor sit amet.</p>
-          </div>
-
-          <div class="col-12 col-md-4 text-center text-md-start">
-            <h2>10,5</h2>
-            <p class="text-muted text-small">Lorem ipsum dolor sit amet.</p>
-          </div>
-
-          <div class="col-12 col-md-4 text-center text-md-start">
-            <h2>75%</h2>
-            <p class="text-muted text-small">Lorem ipsum dolor sit amet.</p>
+      <form class="row g-3 needs-validation pb-3 pt-5" novalidate>
+        <div class="col-md-4">
+          <label for="validationCutom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCutom01" placeholder="David" required>
+          <div class="valid-feedback">
+            ¡Tu nombre suena muy bien!
           </div>
         </div>
-
-      <div class="progress mb-4">
-        <div class="progress-bar w-75 progress-bar-striped bg-warning text-black" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-      </div>
+  
+        <div class="col-md-4">
+          <label for="validationCutom02" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="validationCutom02" placeholder="Zurita Sánchez" required>
+          <div class="valid-feedback">
+            ¡Y qué decir de tus apellidos!
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, elije un nombre de usuario
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <label for="validationCutom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCutom03" required>
+          <div class="invalid-feedback">
+            Proporciona una ciudad válida.
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <label for="validationCutom04" class="form-label">Estado</label>
+          <select class="form-select" id="validationCutom04" required>
+            <option selected disable value="">Elige...</option>
+            <option>Soltero/a</option>
+            <option>Casado/a</option>
+            <option>Secuestrado/a</option>
+            </select>
+          <div class="invalid-feedback">
+            Selecciona un estado válido.
+          </div>
+        </div>
+  
+          <div class="col-md-3">
+            <label for="validationCutom05" class="form-label">Código postal</label>
+            <input type="text" class="form-control" id="validationCutom05" required>
+            <div class="invalid-feedback">
+              Proporiciona un código válido.
+            </div>
+          </div>
+  
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Acepta los términos y condiciones
+              </label>
+              <div class="invalid-feedback">
+                Debe estar de acuerdo antes de enviar.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-5">
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+          </div>
+        </form>
+      </container>
     </main>
 
     <footer>
@@ -69,5 +122,6 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
